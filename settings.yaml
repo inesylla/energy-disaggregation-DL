@@ -1,0 +1,326 @@
+dataset:
+    path: /tmp/redd
+hparams:
+    lr: 0.001
+    batch_size: 64
+    epochs: 5
+    train_size: 0.7
+    test_size: 0.3
+
+appliances:
+    dishwasher:
+        name: dish washer
+        filename: dishwasher.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house4
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: False
+        model: ModelPaperBackward
+        hparams:
+            L: 2304
+            F: 32
+            K: 16
+            H: 512
+    dishwasher-norm:
+        name: dish washer
+        filename: dishwasher.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house4
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 150.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: True
+        model: ModelPaper
+        hparams:
+            L: 1500
+            F: 32
+            K: 16
+            H: 512
+    dishwasher-onlyregression:
+        name: dish washer
+        filename: dishwasher.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house4
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 50.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: False
+        model: ModelOnlyRegression
+        hparams:
+            L: 2304
+            F: 32
+            K: 16
+            H: 512
+    dishwasher-onlyregression-norm:
+        name: dish washer
+        filename: dishwasher.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house4
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 50.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: True
+        model: ModelOnlyRegression
+        hparams:
+            L: 2304
+            F: 32
+            K: 16
+            H: 512
+    dishwasher-classattention:
+        name: dish washer
+        filename: dishwasher.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house4
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: False
+        model: ModelClassAttention
+        hparams:
+            L: 2304
+            F: 32
+            K: 16
+            H: 512
+    fridge:
+        name: fridge
+        filename: fridge.th
+
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: null
+        normalization: False
+        model: ModelPaperBackward
+        hparams:
+            L: 496
+            F: 32
+            K: 8
+            H: 1024
+    fridge-norm:
+        name: fridge
+        filename: fridge.th
+
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: null
+        normalization: True
+        model: ModelPaper
+        hparams:
+            L: 496
+            F: 32
+            K: 8
+            H: 1024
+    fridge-onlyregression:
+        name: fridge
+        filename: fridge.th
+
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: null
+        normalization: False
+        onlyregression: True
+        model: ModelOnlyRegression
+        hparams:
+            L: 496
+            F: 32
+            K: 8
+            H: 1024
+    fridge-onlyregression-norm:
+        name: fridge
+        filename: fridge.th
+
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: null
+        normalization: True
+        model: ModelOnlyRegression
+        hparams:
+            L: 496
+            F: 32
+            K: 8
+            H: 1024
+    fridge-classattention:
+        name: fridge
+        filename: fridge.th
+
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+                - redd_house6
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: null
+        normalization: False
+        model: ModelClassAttention
+        hparams:
+            L: 496
+            F: 32
+            K: 8
+            H: 1024
+    microwave:
+        name: microwave
+        filename: microwave.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: False
+        model: ModelPaperBackward
+        hparams:
+            L: 128
+            F: 16
+            K: 8
+            H: 1024
+    microwave-norm:
+        name: microwave
+        filename: microwave.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+            test:
+                - redd_house1
+        active_threshold: 100.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: True
+        model: ModelPaper
+        hparams:
+            L: 128
+            F: 16
+            K: 8
+            H: 1024
+    microwave-onlyregression:
+        name: microwave
+        filename: microwave.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+            test:
+                - redd_house1
+        active_threshold: 100.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: False
+        model: ModelOnlyRegression
+        hparams:
+            L: 128
+            F: 16
+            K: 8
+            H: 1024
+    microwave-onlyregression-norm:
+        name: microwave
+        filename: microwave.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+            test:
+                - redd_house1
+        active_threshold: 100.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: True
+        model: ModelOnlyRegression
+        hparams:
+            L: 128
+            F: 16
+            K: 8
+            H: 1024
+    microwave-classattention:
+        name: microwave
+        filename: microwave.th
+        buildings:
+            train:
+                - redd_house2
+                - redd_house3
+                - redd_house5
+            test:
+                - redd_house1
+        active_threshold: 15.0
+        active_ratio: 0.5
+        active_oversample: 5
+        normalization: False
+        model: ModelClassAttention
+        hparams:
+            L: 128
+            F: 16
+            K: 8
+            H: 1024

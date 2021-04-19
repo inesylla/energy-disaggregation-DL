@@ -1,0 +1,67 @@
+    - name: building
+        path: house_
+        mains:
+            channels: []
+        unknown:
+            channels: []
+        appliances:
+            - name: oven
+              id: oven
+              activity: cooking
+              channels: []
+            - name: refrigerator
+              id: refrigerator
+              activity: cooking
+              channels: []
+            - name: dishwasher
+              id: dishwasher
+              activity: cleaning 
+              channels: []
+            - name: kitchen_outlet
+              id: kitchen_outlets
+              activity: cooking
+              channels: []
+            - name: lighting
+              id: lighting
+              activity: lighting 
+              channels: []
+            - name: washer_dryer
+              id: washer_dryer
+              activity: cleaning 
+              channels: []
+            - name: microwave
+              id: microwave
+              activity: cooking 
+              channels: []
+            - name: bathroom_outlet
+              id: bathroom_gfi
+              activity: selfcare 
+              channels: []
+            - name: electric_heater
+              id: electric_heat
+              activity: hvac 
+              channels: []
+            - name: stove
+              id: stove
+              activity: cooking
+              channels: []
+            - name: electronics 
+              id: electronics
+              activity: 
+              channels: [] 
+            - name: disposal 
+              id: disposal
+              activity: cooking
+              channels: [] 
+            - name: furance 
+              id: furance
+              activity: cooking
+              channels: [] 
+            - name: smoke_alarms 
+              id: smoke_alarms
+              activity: security
+              channels: [] 
+            - name: air_conditioner
+              id: air_conditioning
+              activity: hvac 
+              channels: [] 

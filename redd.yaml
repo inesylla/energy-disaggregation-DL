@@ -1,0 +1,281 @@
+name: REDD
+path: low_freq
+buildings:
+    - name: building1
+      path: house_1
+      mains:
+          channels: [1,2]
+      unknown:
+          channels: [20]
+      appliances:
+          - name: oven
+            id: oven
+            activity: cooking
+            channels: [3,4]
+          - name: refrigerator
+            id: refrigerator
+            activity: cooking
+            channels: [5]
+          - name: dishwasher
+            id: dishwasher
+            activity: cleaning
+            channels: [6]
+          - name: kitchen_outlets
+            id: kitchen_outlets
+            activity: cooking
+            channels: [7,8,15,16]
+          - name: lighting
+            id: lighting
+            activity: lighting
+            channels: [9,17,18]
+          - name: washer_dryer
+            id: washer_dryer
+            activity: cleaning
+            channels: [10,20]
+          - name: microwave
+            id: microwave
+            activity: cooking
+            channels: [11]
+          - name: bathroom_outlet
+            id: bathroom_gfi
+            activity: selfcare
+            channels: [12]
+          - name: electric_heater
+            id: electric_heat
+            activity: heating
+            channels: [13]
+          - name: stove
+            id: stove
+            activity: cooking
+            channels: [14]
+    - name: building2
+      path: house_2
+      mains:
+          channels: [1,2]
+      unknown:
+          channels: []
+      appliances:
+          - name: refrigerator
+            id: refrigerator
+            activity: cooking
+            channels: [9]
+          - name: dishwasher
+            id: dishwasher
+            activity: cleaning
+            channels: [10]
+          - name: kitchen_outlet
+            id: kitchen_outlets
+            activity: cooking
+            channels: [3,8]
+          - name: lighting
+            id: lighting
+            activity: lighting
+            channels: [4]
+          - name: washer_dryer
+            id: washer_dryer
+            activity: cleaning
+            channels: [7]
+          - name: microwave
+            id: microwave
+            activity: cooking
+            channels: [6]
+          - name: stove
+            id: stove
+            activity: cooking
+            channels: [5]
+          - name: disposal
+            id: disposal
+            activity: cooking
+            channels: [11]
+    - name: building3
+      path: house_3
+      mains:
+          channels: [1,2]
+      unknown:
+          channels: [3,4,12]
+      appliances:
+          - name: refrigerator
+            id: refrigerator
+            activity: cooking
+            channels: [7]
+          - name: dishwasher
+            id: dishwasher
+            activity: cleaning
+            channels: [9]
+          - name: kitchen_outlet
+            id: kitchen_outlets
+            activity: cooking
+            channels: [21,22]
+          - name: lighting
+            id: lighting
+            activity: lighting
+            channels: [5,11,15,17,19]
+          - name: washer_dryer
+            id: washer_dryer
+            activity: cleaning
+            channels: [13,14]
+          - name: microwave
+            id: microwave
+            activity: cooking
+            channels: [16]
+          - name: bathroom_outlet
+            id: bathroom_gfi
+            activity: selfcare
+            channels: [20]
+          - name: disposal
+            id: disposal
+            activity: cooking
+            channels: [8]
+          - name: electronics
+            id: electronics
+            activity: consumer
+            channels: [6]
+          - name: furance
+            id: furance
+            activity: cooking
+            channels: [10]
+          - name: smoke_alarms
+            id: smoke_alarms
+            activity: security
+            channels: [18]
+    - name: building4
+      path: house_4
+      mains:
+          channels: [1,2]
+      unknown:
+          channels: [6,12]
+      appliances:
+          - name: dishwasher
+            id: dishwasher
+            activity: cleaning
+            channels: [15]
+          - name: kitchen_outlet
+            id: kitchen_outlets
+            activity: cooking
+            channels: [5,14]
+          - name: lighting
+            id: lighting
+            activity: lighting
+            channels: [3,13,18,19]
+          - name: washer_dryer
+            id: washer_dryer
+            activity: cleaning
+            channels: [7]
+          - name: bathroom_outlet
+            id: bathroom_gfi
+            activity: selfcare
+            channels: [16,17]
+          - name: stove
+            id: stove
+            activity: cooking
+            channels: [8]
+          - name: furance
+            id: furance
+            activity: cooking
+            channels: [4]
+          - name: smoke_alarms
+            id: smoke_alarms
+            activity: security
+            channels: [12]
+          - name: air_conditioner
+            id: air_conditioning
+            activity: hvac
+            channels: [9,10,20]
+    - name: building5
+      path: house_5
+      mains:
+          channels: [1,2]
+      unknown:
+          channels: [5,7,10,11,15,26]
+      appliances:
+          - name: refrigerator
+            id: refrigerator
+            activity: cooking
+            channels: [18]
+          - name: dishwasher
+            id: dishwasher
+            activity: cleaning
+            channels: [20]
+          - name: kitchen_outlet
+            id: kitchen_outlets
+            activity: cooking
+            channels: [24,25]
+          - name: lighting
+            id: lighting
+            activity: lighting
+            channels: [4,14,17,19,23]
+          - name: washer_dryer
+            id: washer_dryer
+            activity: cleaning
+            channels: [8,9]
+          - name: microwave
+            id: microwave
+            activity: cooking
+            channels: [3]
+          - name: bathroom_outlet
+            id: bathroom_gfi
+            activity: selfcare
+            channels: [16]
+          - name: electric_heater
+            id: electric_heat
+            activity: hvac
+            channels: [12,13]
+          - name: electronics
+            id: electronics
+            activity:
+            channels: [22]
+          - name: disposal
+            id: disposal
+            activity: cooking
+            channels: [21]
+          - name: furance
+            id: furance
+            activity: cooking
+            channels: [6]
+    - name: building6
+      path: house_6
+      mains:
+          channels: [1,2]
+      unknown:
+          channels: [10,11]
+      appliances:
+          - name: refrigerator
+            id: refrigerator
+            activity: cooking
+            channels: [8]
+          - name: dishwasher
+            id: dishwasher
+            activity: cleaning
+            channels: [9]
+          - name: kitchen_outlet
+            id: kitchen_outlets
+            activity: cooking
+            channels: [3,13]
+          - name: lighting
+            id: lighting
+            activity: lighting
+            channels: [14]
+          - name: washer_dryer
+            id: washer_dryer
+            activity: cleaning
+            channels: [4]
+          - name: bathroom_outlet
+            id: bathroom_gfi
+            activity: selfcare
+            channels: [7]
+          - name: electric_heater
+            id: electric_heat
+            activity: hvac
+            channels: [12]
+          - name: stove
+            id: stove
+            activity: cooking
+            channels: [5]
+          - name: electronics
+            id: electronics
+            activity:
+            channels: [6]
+          - name: air_conditioner
+            id: air_conditioning
+            activity: hvac
+            channels: [15,16,17]
