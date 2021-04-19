@@ -655,3 +655,5 @@ Shin, C., Joo, S., Yim, J., Lee, H., Moon, T., & Rhee, W. (2019, July).
 Subtask gated networks for non-intrusive load monitoring.
 In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 33, No. 01, pp. 1150-1157).
 [https://www.mdpi.com/1996-1073/14/4/847/pdf](https://www.mdpi.com/1996-1073/14/4/847/pdf)
+
+Team Members colaborating on the project: Victor Gil, Sergi Bragos and Inés Ylla 
